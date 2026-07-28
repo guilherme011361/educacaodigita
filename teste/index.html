@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria Criativa - Inovação & Organização</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Papelaria<span>Criativa</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Dê asas à sua imaginação</h2>
+            <p>Os melhores materiais para estudos, trabalho e arte em um só lugar.</p>
+            <a href="#produtos" class="btn">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Nossos Destaques</h2>
+        <div class="grid-produtos">
+            
+            <div class="card">
+                <div class="card-img">📓</div>
+                <h3>Cadernos Inteligentes</h3>
+                <p>Personalize suas folhas e organize sua rotina com estilo.</p>
+                <span class="preco">R$ 49,90</span>
+                <button onclick="adicionarAoCarrinho('Caderno Inteligente')">Comprar</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">🖋️</div>
+                <h3>Kit Canetas Gel</h3>
+                <p>Cores vibrantes e escrita macia para seus resumos.</p>
+                <span class="preco">R$ 29,90</span>
+                <button onclick="adicionarAoCarrinho('Kit Canetas Gel')">Comprar</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">🗓️</div>
+                <h3>Planners Anuais</h3>
+                <p>Mantenha suas metas e compromissos sempre em dia.</p>
+                <span class="preco">R$ 59,90</span>
+                <button onclick="adicionarAoCarrinho('Planner Anual')">Comprar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p>&copy; 2026 Papelaria Criativa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

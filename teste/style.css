@@ -1,0 +1,163 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #4a4e69;
+}
+
+.logo span {
+    color: #ff758f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a4e69;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff758f;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ff758f 0%, #ff7eb3 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #ff758f;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Produtos */
+.produtos {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.produtos h2 {
+    color: #4a4e69;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #4a4e69;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.preco {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff758f;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: #4a4e69;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #22223b;
+}
+
+/* Rodapé */
+footer {
+    background-color: #22223b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
